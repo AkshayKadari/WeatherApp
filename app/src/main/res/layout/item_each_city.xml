@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cweather"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/itemrow"
+        android:layout_weight="0.04">
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textViewLastUpdated"
+            android:textSize="12dp"
+            android:layout_width="100dp"
+            android:layout_below="@+id/textViewCityTemperature"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/textViewCityCountryName"
+            android:layout_alignRight="@+id/textViewCityTemperature"
+            android:layout_alignEnd="@+id/textViewCityTemperature" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/star_gray"
+            android:id="@+id/imageView5"
+            android:layout_alignTop="@+id/textViewCityTemperature"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textViewCityTemperature"
+            android:layout_width="205dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewCityCountryName"
+            android:layout_toEndOf="@+id/textViewCityCountryName" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textViewCityCountryName"
+            android:layout_gravity="center_vertical"
+            android:layout_width="120dp"
+            android:layout_alignBaseline="@+id/textViewCityTemperature"
+            android:layout_alignBottom="@+id/textViewCityTemperature"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
